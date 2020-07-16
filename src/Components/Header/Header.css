@@ -1,0 +1,10 @@
+#userInfo {
+    width: 300px;
+}
+.login-wrapper {
+    width:500px;
+    display: flex;
+}
+.logout {
+    margin-left: 30px;
+}
