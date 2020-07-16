@@ -28,6 +28,10 @@ function Header() {
             userData: userData
         }
     }
+    const Logout = () => {
+        cookie.remove('token')   
+        window.location.href = "/";
+    }
     return (
         <div id="header">
             <div id="headerHead">
@@ -35,7 +39,8 @@ function Header() {
                 <div id="userInfo">
                     {isLogin ? 
                         <div class="login-wrapper">
-                            <Link to={linkToMyPage}>{userData.name}</Link>
+                            <Link to={linkToMyPage}>{userData.name}</Link> &nbsp;&nbsp;
+                            <p onClick={Logout}>로그아웃</p>
                         </div> : <Link to="/login">로그인</Link>} 
                 </div>
             </div>
