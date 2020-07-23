@@ -10,7 +10,7 @@ function Header() {
     const [isLogin, setIsLogin] = useState(true);
     const [userData, setUserData] = useState({});
     useEffect(() => {
-        axios.get("http://61ec04bfc21a.ngrok.io/users/me", {
+        axios.get("http://9acb3b5a8fb7.ngrok.io/users/me", {
             headers: {
                 "X-Access-Token": cookie.load('token')
             }
@@ -39,7 +39,7 @@ function Header() {
                 <div id="userInfo">
                     {isLogin ? 
                         <div class="login-wrapper">
-                            <Link to={linkToMyPage}>{userData.name}</Link> &nbsp;&nbsp;
+                            <Link to={linkToMyPage} style={{marginTop: "20px"}}>{userData.name}</Link> &nbsp;&nbsp;
                             <p onClick={Logout}>로그아웃</p>
                         </div> : <Link to="/login">로그인</Link>} 
                 </div>

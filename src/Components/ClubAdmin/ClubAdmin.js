@@ -4,16 +4,7 @@ import Club from '../../Images/club1.png';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
-// const PostLogin = () => {
-//     axios.post("http://61e57ec5f7c9.ngrok.io/auth/login", {
-//         id: "h-williams",
-//         password: "test"
-//     }).then(response => {
-//         console.log(response)
-//     }).catch(err => {
-//         console.log(err)
-//     })
-// }
+
 function ClubAdmin() {
     return (
         <div id="innerWrapper">
