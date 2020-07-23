@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import './App.css';
 import ClubAdminPage from './Pages/ClubAdminPage';
 import AdminPage from './Pages/AdminPage';
+import PostViewPage from './Pages/PostViewPage';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/mypage" component={MyPage}/>
       <Route exact path="/recruit" component={RecruitPage}/>
       <Route exact path="/clubpost" component={ClubPostPage}/>
+      <Route exact path="/postview" component={PostViewPage}/>
       <Route exact path="/clubadmin" component={ClubAdminPage}/>
       <Route exact path="/admin" component={AdminPage}/>
     </>

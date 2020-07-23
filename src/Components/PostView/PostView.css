@@ -1,0 +1,30 @@
+#post-wrapper{
+    margin: 0 auto;
+    width: 69%;
+    margin-top: 10px;
+}
+#title{
+    text-align: left;
+    border-bottom: 1px solid #dedede;
+}
+
+#content{
+    padding: 5px;
+    height: 100px;
+}
+#comment-wrapper{
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+#comment-top{
+    padding: 10px;
+    color: #5b4ba5;;
+    font-weight: bold;
+    border-bottom : 1px solid #dedede;
+}
+#comment-item{
+    padding: 10px;
+}
+#comment-writer{
+    float: right;
+}

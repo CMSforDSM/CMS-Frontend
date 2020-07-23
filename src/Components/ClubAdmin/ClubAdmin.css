@@ -27,6 +27,7 @@ p{
 }
 
 .clubInfoLeft{
+    margin-top: 6px;
     float: left;
     width: 100px;
     height: 100px;

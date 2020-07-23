@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ClubAdmin.css';
 import Club from '../../Images/club1.png';
 import axios from 'axios';
+import cookie from 'react-cookies';
 import {Link} from 'react-router-dom';
 
+function ClubAdmin(props) {
+    // const clubData = props.clubData;
 
-function ClubAdmin() {
+    // const [clublogo, setClubLogo] = useState({});
+    // const [clubName, setClubName] = useState(clubData.clubName);
+    // const [introduce, setIntroduce] = useState(clubData.introduce);
+    
+    // const onPost = () => {
+    //     axios.patch("http://9acb3b5a8fb7.ngrok.io/clubs/test", {
+    //         clubName : clubName,
+    //         introduce: introduce,
+    //         logo : clublogo
+    //     },{
+    //         headers: {
+    //             "X-Access-Token": cookie.load('token')
+    //         }
+    //     }).then(response => {
+    //         window.location.href ="/clubadmin";
+    //     }).catch(err => {
+    //         console.log(err)
+    //     })
+    // }
     return (
         <div id="innerWrapper">
             <div id="clubList">
@@ -33,15 +54,15 @@ function ClubAdmin() {
                             <div class="clubItem">동아리 소개</div> 
                         </div>
                         <div id="clubInfoRight">
-                            <input type="file" name="" id=""/><br/>
-                            <input type="text"/><br/>
-                            <input type="text"/><br/>
+                            {/* <input type="file" onChange={(e) => setClubLogo(e.target.files[0])}/><br/>
+                            <input type="text" onChange={(e) => setClubName(e.target.value)} value={clubData.clubName}/><br/>
+                            <input type="text" onChange={(e) => setIntroduce(e.target.value)}  value={clubData.introduce}/><br/> */}
                         </div>
                     </div>
                     <p>현재 동아리원 관리</p>
                     <div class="clubMemberWrapper">
                         <div class="clubMemberLeft">
-                            동아리원
+                            동아리원 &nbsp;&nbsp;&nbsp; 부장
                         </div>
                         <div>
                             <div class="clubMemberItem">
@@ -57,7 +78,7 @@ function ClubAdmin() {
                     </div>
 
                 </div>
-                <div id="editBtn">수정하기</div>
+                {/* <div id="editBtn" onClick={onPost} >수정하기</div> */}
             </div>
         </div>
     );
