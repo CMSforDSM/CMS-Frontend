@@ -13,7 +13,7 @@ function MyPage(props) {
     const [password, setPassword] = useState(userData.name);
     
     const onPost = () => {
-        axios.patch("http://61ec04bfc21a.ngrok.io/users/me", {
+        axios.patch("http://3.34.0.219:5000/users/me", {
             introduce: introduce,
             password: password
         },{

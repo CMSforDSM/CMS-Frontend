@@ -8,7 +8,7 @@ import './Main.css';
 import axios from 'axios';
 
 const PostLogin = () => {
-    axios.post("http://7c7ab1a25f6f.ngrok.io/auth/login", {
+    axios.post("http://3.34.0.219:5000/auth/login", {
         id: "h-williams",
         password: "test"
     }).then(response => {
@@ -30,7 +30,7 @@ function Main() {
                     <div id="clubInfo">
                         <div id="clubNameWrapper">
                             <img src={Club} alt=""/>
-                            <div style={{float: "right", width: "88%", height: "100px", border: "solid 1px #e6e6e6;"}}>
+                            <div style={{float: "right", width: "88%", height: "100px", border: "1px solid black;"}}>
                                 <div id="clubName">Entry</div>
                                 <div style={{padding: "5px"}}>Entry 원서 접수 서비스 개발 동아리입니다.</div>
                             </div>

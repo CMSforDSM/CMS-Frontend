@@ -10,12 +10,12 @@ function Login() {
     const [password, setPassword] = useState("");
     const PostLogin = () => {
         console.log(login, password);
-        axios.post("http://9acb3b5a8fb7.ngrok.io/auth/login", {
+        axios.post("http://3.34.0.219:5000/auth/login", {
             id: login,
             password: password
         }).then(response => {
             cookie.save('token', response.data.accessToken)
-                axios.get("http://9acb3b5a8fb7.ngrok.io/users/me", {
+                axios.get("http://3.34.0.219:5000/users/me", {
                     headers: {
                         "X-Access-Token": response.data.accessToken
                     }

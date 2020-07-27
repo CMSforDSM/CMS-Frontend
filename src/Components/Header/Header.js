@@ -10,7 +10,7 @@ function Header() {
     const [isLogin, setIsLogin] = useState(true);
     const [userData, setUserData] = useState({});
     useEffect(() => {
-        axios.get("http://9acb3b5a8fb7.ngrok.io/users/me", {
+        axios.get("http://3.34.0.219:5000/users/me", {
             headers: {
                 "X-Access-Token": cookie.load('token')
             }

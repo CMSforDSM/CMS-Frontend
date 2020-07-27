@@ -1,4 +1,4 @@
-#title{
+#clubadmintitle{
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ p{
 .clubMemberLeft{
     float: left;
     width: 100px;
-    height: 150px;
+    height: 200px;
 }
 
 #clubInfoRight input[type="text"]{
