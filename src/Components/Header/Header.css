@@ -13,3 +13,7 @@ p:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+
+.Marquee{
+    overflow: hidden;
+}

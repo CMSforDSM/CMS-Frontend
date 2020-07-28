@@ -26,7 +26,7 @@ function ClubAdmin() {
             
         },{
             headers: {
-                "X-Access-Token": 'eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU4MTA5OTUsImV4cCI6MTU5NTgxODE5NSwic3ViIjoiMzExOSIsInR5cGUiOiJhY2Nlc3NfdG9rZW4ifQ.c40Vj-u3dYdAIV98h4t_kSjn1vUUxF25tS3DdYkFrgQ'
+                "X-Access-Token": 'b2iidkkdiskejfjv.dsjseilsjdlfe.tokaaweolfskeioswldkeosl'
             }
         }).then(response => {
             window.location.href ="/clubadmin";
@@ -103,7 +103,7 @@ function ClubAdmin() {
     var m = String(clubData.members).split(",");
     const memberArr = m.map((member,i) => {
         var mm = member.split("-");
-        // return <div class="clubMemberItem" key={i}><input type="text" value={mm[0]} readOnly/> <input type="text" value={mm[1]} readOnly/> <button onClick={onDelMember(mm[0])}>삭제</button> </div>
+        return <div class="clubMemberItem" key={i} ><input type="text" value={mm[0]} readOnly/> <input type="text" value={mm[1]} readOnly/> <button id={i} onClick={onDelMember(mm[0])}>삭제</button> </div>
     });
 
     return (

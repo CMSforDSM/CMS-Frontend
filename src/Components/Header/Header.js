@@ -1,4 +1,5 @@
 import React, {useEffect,useState} from 'react';
+import Marquee from "react-smooth-marquee"
 import Notice from '../../Images/notice.png';
 import cookie from 'react-cookies';
 import { Link } from 'react-router-dom';
@@ -52,10 +53,10 @@ function Header() {
                 </ul>
             </div>
             <div id="noticebar">
-                <ul>
-                    <li><img style={{marginRight: "5px"}}src={Notice}/>공지사항</li>
-                </ul>
-            </div>
+            <ul>    
+                <Marquee>Content goes here Content goes here Content goes here Content goes here Content goes here  </Marquee>
+            </ul>                
+        </div>
         </div>
     );
 }
